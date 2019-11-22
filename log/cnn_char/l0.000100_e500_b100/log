@@ -1,0 +1,23 @@
+H1, 2019-06-23 14:30:26,650     INFO  character-level CNN with BN and scheduled learning rate
+
+    `Dos Santos, Cícero Nogueira, and Maira Gatti. "Deep Convolutional Neural Networks for Sentiment Analysis of Short Texts." COLING. 2014.`
+
+
+
+        - inputs:
+
+            - onehot char vector (max word num in sentence, max char num in word, character size)
+
+            - embedded vector of word (max word num in sentence, embedded dimension)
+
+        - network
+
+            - word -(CNN)-> feature by word (w)
+
+            - char -(CNN)-> char embedded vector for each word -(CNN)-> feature by char (c)
+
+            [c, w] -> CNN + max pool over feature -> FC -> output
+
+    
+H1, 2019-06-23 14:30:26,653     INFO train: epoch (500), size (6688), iteration in an epoch (66), batch size(100)
+H1, 2019-06-23 14:30:26,655     INFO validation: size (620)

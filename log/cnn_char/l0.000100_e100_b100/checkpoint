@@ -1,0 +1,4 @@
+model_checkpoint_path: "model.ckpt"
+all_model_checkpoint_paths: "progress-0-model.ckpt"
+all_model_checkpoint_paths: "progress-50-model.ckpt"
+all_model_checkpoint_paths: "model.ckpt"

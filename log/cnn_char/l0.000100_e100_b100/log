@@ -1,0 +1,113 @@
+H1, 2019-05-18 19:59:53,011     INFO  character-level CNN with BN and scheduled learning rate
+    `Dos Santos, Cícero Nogueira, and Maira Gatti. "Deep Convolutional Neural Networks for Sentiment Analysis of Short Texts." COLING. 2014.`
+
+        - inputs:
+            - onehot char vector (max word num in sentence, max char num in word, character size)
+            - embedded vector of word (max word num in sentence, embedded dimension)
+        - network
+            - word -(CNN)-> feature by word (w)
+            - char -(CNN)-> char embedded vector for each word -(CNN)-> feature by char (c)
+            [c, w] -> CNN + max pool over feature -> FC -> output
+    
+H1, 2019-05-18 19:59:53,015     INFO train: epoch (100), size (97027), iteration in an epoch (970), batch size(100)
+H1, 2019-05-18 19:59:53,015     INFO validation: size (5106)
+H1, 2019-05-18 20:01:05,315     INFO epoch 0: acc 0.708, loss 0.568, train acc 0.685, train loss 0.583
+H1, 2019-05-18 20:02:16,222     INFO epoch 1: acc 0.731, loss 0.542, train acc 0.727, train loss 0.534
+H1, 2019-05-18 20:03:27,670     INFO epoch 2: acc 0.746, loss 0.520, train acc 0.742, train loss 0.512
+H1, 2019-05-18 20:04:39,287     INFO epoch 3: acc 0.742, loss 0.529, train acc 0.756, train loss 0.492
+H1, 2019-05-18 20:05:49,755     INFO epoch 4: acc 0.771, loss 0.484, train acc 0.769, train loss 0.473
+H1, 2019-05-18 20:07:02,200     INFO epoch 5: acc 0.775, loss 0.475, train acc 0.782, train loss 0.455
+H1, 2019-05-18 20:08:13,809     INFO epoch 6: acc 0.779, loss 0.469, train acc 0.793, train loss 0.438
+H1, 2019-05-18 20:09:24,885     INFO epoch 7: acc 0.772, loss 0.480, train acc 0.803, train loss 0.423
+H1, 2019-05-18 20:10:36,964     INFO epoch 8: acc 0.791, loss 0.455, train acc 0.811, train loss 0.409
+H1, 2019-05-18 20:11:48,732     INFO epoch 9: acc 0.784, loss 0.460, train acc 0.818, train loss 0.397
+H1, 2019-05-18 20:13:00,808     INFO epoch 10: acc 0.769, loss 0.493, train acc 0.826, train loss 0.384
+H1, 2019-05-18 20:14:13,339     INFO epoch 11: acc 0.793, loss 0.452, train acc 0.832, train loss 0.372
+H1, 2019-05-18 20:15:25,688     INFO epoch 12: acc 0.794, loss 0.454, train acc 0.838, train loss 0.362
+H1, 2019-05-18 20:16:38,538     INFO epoch 13: acc 0.796, loss 0.453, train acc 0.845, train loss 0.350
+H1, 2019-05-18 20:17:51,304     INFO epoch 14: acc 0.800, loss 0.450, train acc 0.848, train loss 0.341
+H1, 2019-05-18 20:19:03,960     INFO epoch 15: acc 0.791, loss 0.472, train acc 0.853, train loss 0.332
+H1, 2019-05-18 20:20:14,754     INFO epoch 16: acc 0.797, loss 0.470, train acc 0.858, train loss 0.323
+H1, 2019-05-18 20:21:25,415     INFO epoch 17: acc 0.798, loss 0.470, train acc 0.861, train loss 0.316
+H1, 2019-05-18 20:22:35,927     INFO epoch 18: acc 0.798, loss 0.471, train acc 0.865, train loss 0.308
+H1, 2019-05-18 20:23:46,366     INFO epoch 19: acc 0.806, loss 0.474, train acc 0.869, train loss 0.299
+H1, 2019-05-18 20:24:56,670     INFO epoch 20: acc 0.802, loss 0.477, train acc 0.872, train loss 0.292
+H1, 2019-05-18 20:26:07,277     INFO epoch 21: acc 0.782, loss 0.516, train acc 0.876, train loss 0.286
+H1, 2019-05-18 20:27:17,740     INFO epoch 22: acc 0.794, loss 0.493, train acc 0.878, train loss 0.280
+H1, 2019-05-18 20:28:28,474     INFO epoch 23: acc 0.783, loss 0.524, train acc 0.882, train loss 0.272
+H1, 2019-05-18 20:29:38,672     INFO epoch 24: acc 0.800, loss 0.505, train acc 0.885, train loss 0.268
+H1, 2019-05-18 20:30:49,318     INFO epoch 25: acc 0.808, loss 0.493, train acc 0.885, train loss 0.264
+H1, 2019-05-18 20:31:59,356     INFO epoch 26: acc 0.804, loss 0.508, train acc 0.890, train loss 0.257
+H1, 2019-05-18 20:33:09,759     INFO epoch 27: acc 0.806, loss 0.522, train acc 0.892, train loss 0.251
+H1, 2019-05-18 20:34:19,677     INFO epoch 28: acc 0.803, loss 0.519, train acc 0.893, train loss 0.249
+H1, 2019-05-18 20:35:29,818     INFO epoch 29: acc 0.793, loss 0.537, train acc 0.897, train loss 0.242
+H1, 2019-05-18 20:36:39,779     INFO epoch 30: acc 0.802, loss 0.537, train acc 0.897, train loss 0.239
+H1, 2019-05-18 20:37:50,172     INFO epoch 31: acc 0.785, loss 0.575, train acc 0.900, train loss 0.234
+H1, 2019-05-18 20:39:00,374     INFO epoch 32: acc 0.787, loss 0.557, train acc 0.902, train loss 0.231
+H1, 2019-05-18 20:40:10,396     INFO epoch 33: acc 0.799, loss 0.560, train acc 0.904, train loss 0.225
+H1, 2019-05-18 20:41:20,448     INFO epoch 34: acc 0.804, loss 0.551, train acc 0.906, train loss 0.223
+H1, 2019-05-18 20:42:30,526     INFO epoch 35: acc 0.788, loss 0.595, train acc 0.908, train loss 0.216
+H1, 2019-05-18 20:43:40,681     INFO epoch 36: acc 0.793, loss 0.577, train acc 0.910, train loss 0.213
+H1, 2019-05-18 20:44:51,007     INFO epoch 37: acc 0.802, loss 0.583, train acc 0.910, train loss 0.210
+H1, 2019-05-18 20:46:01,073     INFO epoch 38: acc 0.795, loss 0.596, train acc 0.913, train loss 0.207
+H1, 2019-05-18 20:47:11,106     INFO epoch 39: acc 0.778, loss 0.651, train acc 0.914, train loss 0.202
+H1, 2019-05-18 20:48:21,129     INFO epoch 40: acc 0.770, loss 0.702, train acc 0.917, train loss 0.199
+H1, 2019-05-18 20:49:31,458     INFO epoch 41: acc 0.777, loss 0.674, train acc 0.917, train loss 0.195
+H1, 2019-05-18 20:50:41,510     INFO epoch 42: acc 0.797, loss 0.623, train acc 0.919, train loss 0.193
+H1, 2019-05-18 20:51:51,888     INFO epoch 43: acc 0.800, loss 0.620, train acc 0.919, train loss 0.191
+H1, 2019-05-18 20:53:01,965     INFO epoch 44: acc 0.798, loss 0.638, train acc 0.921, train loss 0.187
+H1, 2019-05-18 20:54:12,224     INFO epoch 45: acc 0.770, loss 0.720, train acc 0.922, train loss 0.185
+H1, 2019-05-18 20:55:22,377     INFO epoch 46: acc 0.782, loss 0.676, train acc 0.924, train loss 0.182
+H1, 2019-05-18 20:56:32,513     INFO epoch 47: acc 0.792, loss 0.685, train acc 0.925, train loss 0.179
+H1, 2019-05-18 20:57:42,670     INFO epoch 48: acc 0.792, loss 0.685, train acc 0.926, train loss 0.176
+H1, 2019-05-18 20:58:53,287     INFO epoch 49: acc 0.794, loss 0.678, train acc 0.927, train loss 0.174
+H1, 2019-05-18 21:00:03,660     INFO epoch 50: acc 0.790, loss 0.701, train acc 0.929, train loss 0.171
+H1, 2019-05-18 21:01:13,682     INFO epoch 51: acc 0.774, loss 0.764, train acc 0.930, train loss 0.169
+H1, 2019-05-18 21:02:24,869     INFO epoch 52: acc 0.787, loss 0.710, train acc 0.930, train loss 0.167
+H1, 2019-05-18 21:03:36,263     INFO epoch 53: acc 0.789, loss 0.723, train acc 0.932, train loss 0.165
+H1, 2019-05-18 21:04:47,281     INFO epoch 54: acc 0.796, loss 0.717, train acc 0.934, train loss 0.162
+H1, 2019-05-18 21:05:58,498     INFO epoch 55: acc 0.780, loss 0.769, train acc 0.934, train loss 0.160
+H1, 2019-05-18 21:07:11,758     INFO epoch 56: acc 0.796, loss 0.740, train acc 0.935, train loss 0.157
+H1, 2019-05-18 21:08:24,982     INFO epoch 57: acc 0.789, loss 0.751, train acc 0.935, train loss 0.157
+H1, 2019-05-18 21:09:37,798     INFO epoch 58: acc 0.760, loss 0.868, train acc 0.937, train loss 0.154
+H1, 2019-05-18 21:10:49,803     INFO epoch 59: acc 0.770, loss 0.848, train acc 0.938, train loss 0.152
+H1, 2019-05-18 21:12:01,102     INFO epoch 60: acc 0.781, loss 0.790, train acc 0.939, train loss 0.150
+H1, 2019-05-18 21:13:12,003     INFO epoch 61: acc 0.793, loss 0.779, train acc 0.939, train loss 0.147
+H1, 2019-05-18 21:14:23,288     INFO epoch 62: acc 0.791, loss 0.793, train acc 0.940, train loss 0.148
+H1, 2019-05-18 21:15:35,787     INFO epoch 63: acc 0.793, loss 0.804, train acc 0.941, train loss 0.145
+H1, 2019-05-18 21:16:47,225     INFO epoch 64: acc 0.781, loss 0.841, train acc 0.942, train loss 0.144
+H1, 2019-05-18 21:17:59,246     INFO epoch 65: acc 0.785, loss 0.848, train acc 0.941, train loss 0.145
+H1, 2019-05-18 21:19:10,684     INFO epoch 66: acc 0.784, loss 0.822, train acc 0.944, train loss 0.138
+H1, 2019-05-18 21:20:22,560     INFO epoch 67: acc 0.785, loss 0.854, train acc 0.944, train loss 0.139
+H1, 2019-05-18 21:21:34,205     INFO epoch 68: acc 0.777, loss 0.858, train acc 0.944, train loss 0.137
+H1, 2019-05-18 21:22:45,967     INFO epoch 69: acc 0.785, loss 0.867, train acc 0.946, train loss 0.136
+H1, 2019-05-18 21:23:56,929     INFO epoch 70: acc 0.787, loss 0.861, train acc 0.946, train loss 0.135
+H1, 2019-05-18 21:25:09,088     INFO epoch 71: acc 0.792, loss 0.863, train acc 0.947, train loss 0.133
+H1, 2019-05-18 21:26:20,955     INFO epoch 72: acc 0.791, loss 0.878, train acc 0.948, train loss 0.131
+H1, 2019-05-18 21:27:32,371     INFO epoch 73: acc 0.767, loss 0.973, train acc 0.947, train loss 0.132
+H1, 2019-05-18 21:28:43,684     INFO epoch 74: acc 0.790, loss 0.877, train acc 0.948, train loss 0.128
+H1, 2019-05-18 21:29:55,841     INFO epoch 75: acc 0.775, loss 0.929, train acc 0.950, train loss 0.129
+H1, 2019-05-18 21:31:07,779     INFO epoch 76: acc 0.800, loss 0.899, train acc 0.952, train loss 0.125
+H1, 2019-05-18 21:32:19,446     INFO epoch 77: acc 0.784, loss 0.913, train acc 0.948, train loss 0.129
+H1, 2019-05-18 21:33:30,027     INFO epoch 78: acc 0.778, loss 0.954, train acc 0.951, train loss 0.124
+H1, 2019-05-18 21:34:40,715     INFO epoch 79: acc 0.781, loss 0.936, train acc 0.952, train loss 0.123
+H1, 2019-05-18 21:35:51,962     INFO epoch 80: acc 0.788, loss 0.934, train acc 0.953, train loss 0.121
+H1, 2019-05-18 21:37:03,275     INFO epoch 81: acc 0.776, loss 1.004, train acc 0.953, train loss 0.122
+H1, 2019-05-18 21:38:13,709     INFO epoch 82: acc 0.788, loss 0.944, train acc 0.954, train loss 0.118
+H1, 2019-05-18 21:39:25,163     INFO epoch 83: acc 0.788, loss 0.959, train acc 0.953, train loss 0.121
+H1, 2019-05-18 21:40:36,316     INFO epoch 84: acc 0.790, loss 0.954, train acc 0.954, train loss 0.117
+H1, 2019-05-18 21:41:48,088     INFO epoch 85: acc 0.776, loss 0.999, train acc 0.954, train loss 0.118
+H1, 2019-05-18 21:42:59,721     INFO epoch 86: acc 0.775, loss 1.021, train acc 0.955, train loss 0.116
+H1, 2019-05-18 21:44:11,419     INFO epoch 87: acc 0.781, loss 1.015, train acc 0.956, train loss 0.115
+H1, 2019-05-18 21:45:23,794     INFO epoch 88: acc 0.782, loss 0.995, train acc 0.955, train loss 0.116
+H1, 2019-05-18 21:46:36,497     INFO epoch 89: acc 0.780, loss 1.038, train acc 0.957, train loss 0.113
+H1, 2019-05-18 21:47:47,863     INFO epoch 90: acc 0.780, loss 1.017, train acc 0.955, train loss 0.116
+H1, 2019-05-18 21:49:00,341     INFO epoch 91: acc 0.782, loss 1.025, train acc 0.959, train loss 0.108
+H1, 2019-05-18 21:50:11,945     INFO epoch 92: acc 0.778, loss 1.050, train acc 0.958, train loss 0.109
+H1, 2019-05-18 21:51:24,327     INFO epoch 93: acc 0.793, loss 1.023, train acc 0.957, train loss 0.112
+H1, 2019-05-18 21:52:36,743     INFO epoch 94: acc 0.782, loss 1.054, train acc 0.958, train loss 0.109
+H1, 2019-05-18 21:53:47,497     INFO epoch 95: acc 0.800, loss 1.022, train acc 0.959, train loss 0.107
+H1, 2019-05-18 21:54:59,454     INFO epoch 96: acc 0.770, loss 1.116, train acc 0.960, train loss 0.107
+H1, 2019-05-18 21:56:11,409     INFO epoch 97: acc 0.765, loss 1.126, train acc 0.959, train loss 0.109
+H1, 2019-05-18 21:57:23,144     INFO epoch 98: acc 0.778, loss 1.090, train acc 0.961, train loss 0.105
+H1, 2019-05-18 21:58:34,655     INFO epoch 99: acc 0.777, loss 1.102, train acc 0.961, train loss 0.105
